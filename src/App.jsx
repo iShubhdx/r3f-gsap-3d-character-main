@@ -136,18 +136,9 @@ const App = () => {
               className={cn("absolute inset-0", backgroundClass)}
               ref={backgroundRef}
             >
-              <KeyboardControls
-                map={[
-                  { name: "forward", keys: ["ArrowUp", "w", "W"] },
-                  { name: "backward", keys: ["ArrowDown", "s", "S"] },
-                  { name: "left", keys: ["ArrowLeft", "a", "A"] },
-                  { name: "right", keys: ["ArrowRight", "d", "D"] },
-                ]}
-              >
-                <Canvas camera={{ position: [1, 1.5, 2.5], fov: 50 }} shadows>
-                  <Experience character={selectedCharacter} />
-                </Canvas>
-              </KeyboardControls>
+              <Canvas camera={{ position: [1, 1.5, 2.5], fov: 50 }} shadows>
+                <Experience character={selectedCharacter} />
+              </Canvas>
             </div>
           </div>
         </>
